@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "5fQZe0tyrilY7yWiHe7Z4WeLb6aLVf7wMl3wOKourMQ=",
+  "Source": "RestaurantFavesAPI",
+  "BasePath": "_content/RestaurantFavesAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

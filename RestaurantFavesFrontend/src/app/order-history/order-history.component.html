@@ -1,0 +1,23 @@
+<html>
+    <body>
+        <div>
+        </div>
+        <table style= "margin-left:auto; margin-right:auto; text-align:center; table-layout: fixed ; width: 80%;">
+            <tr>
+                <th>Restaurant</th>
+                <th>Description</th>
+                <th>Rating</th>
+                <th>Order Again?</th>
+            </tr>
+            <tr *ngFor="let o of orders">
+                <td>{{o.restaurant}}</td>
+                <td>{{o.description}}</td>
+                <td>{{o.rating}}</td>
+                <td>{{o.orderAgain}}</td>
+            </tr>
+        </table>
+        <app-add-order [newOrder]="newOrder" (changed)="addNewOrder()"></app-add-order>
+
+        
+    </body>
+</html>

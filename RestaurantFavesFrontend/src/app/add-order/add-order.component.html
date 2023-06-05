@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div *ngIf="displayForm">
+            
+            <p>Restaurant</p>
+            <input type="text" [(ngModel)]="newOrder.restaurant"/>
+            <p>Order</p>
+            <input type="text" [(ngModel)]="newOrder.description"/>
+            <p>Rating</p>
+            <input type="number" min="1" max="10" [(ngModel)]="newOrder.rating"/>
+            <p>Order Again?
+            <input type="checkbox" [(ngModel)]="newOrder.orderAgain"/>
+            </p>
+            <button (click)="addOrder()">Add to orders</button>
+            
+
+        </div>
+                <button *ngIf="!displayForm" (click)="toggleDisplay()">Add new Order</button>
+    </body>
+</html>
